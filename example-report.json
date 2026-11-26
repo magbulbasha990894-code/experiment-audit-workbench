@@ -1,0 +1,96 @@
+{
+  "status": "hold",
+  "flags": [
+    "differential_attrition",
+    "direction_not_robust_to_missing_outcomes"
+  ],
+  "allocation": {
+    "target_treatment_share": 0.5,
+    "observed_treatment_share": 0.5,
+    "approximate_p": 1.0,
+    "alpha": 0.01
+  },
+  "counts": {
+    "control": {
+      "assigned": 220,
+      "observed": 215,
+      "success": 87,
+      "attrition": 0.022727272727272707
+    },
+    "treatment": {
+      "assigned": 220,
+      "observed": 154,
+      "success": 88,
+      "attrition": 0.30000000000000004
+    }
+  },
+  "absolute_attrition_gap": 0.27727272727272734,
+  "attrition_gap_limit": 0.05,
+  "contrast": {
+    "missing_outcome_bounds": [
+      -0.018181818181818132,
+      0.3045454545454545
+    ],
+    "complete_case_difference": 0.16677740863787371,
+    "complete_case_95": [
+      0.06473024625567118,
+      0.26882457102007623
+    ]
+  },
+  "strata_exploratory": {
+    "new": {
+      "counts": {
+        "control": {
+          "assigned": 110,
+          "observed": 107,
+          "success": 33
+        },
+        "treatment": {
+          "assigned": 110,
+          "observed": 72,
+          "success": 33
+        }
+      },
+      "contrast": {
+        "missing_outcome_bounds": [
+          -0.027272727272727282,
+          0.3454545454545455
+        ],
+        "complete_case_difference": 0.1499221183800623,
+        "complete_case_95": [
+          0.005339612833488577,
+          0.294504623926636
+        ]
+      }
+    },
+    "returning": {
+      "counts": {
+        "control": {
+          "assigned": 110,
+          "observed": 108,
+          "success": 54
+        },
+        "treatment": {
+          "assigned": 110,
+          "observed": 82,
+          "success": 55
+        }
+      },
+      "contrast": {
+        "missing_outcome_bounds": [
+          -0.009090909090909038,
+          0.2636363636363636
+        ],
+        "complete_case_difference": 0.1707317073170732,
+        "complete_case_95": [
+          0.03202634399844523,
+          0.3094370706357012
+        ]
+      }
+    }
+  },
+  "inputs_sha256": {
+    "assignments": "e1e875952e32525df69a0b4712a55b8e93c4b66d7b2bd473846020889d6fdff3",
+    "outcomes": "93090347efa8ecc30d776352b439b242758873775486066c01ba6d87648d95dc"
+  }
+}
